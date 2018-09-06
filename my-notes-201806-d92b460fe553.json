@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "my-notes-201806",
+  "private_key_id": "d92b460fe553f05ee3a266cb520c7af172f7fd7d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChe84OnZrNOFZm\nA1yuxfbBsfINFpeANerH/eT/gpCjO4urOyaQVl6kjDyYuCeu28Wqv3mthDux7aty\nvqvevnFdB9aNu4uRE5gKyhpqtwMyRYecUqMhrfw2Zb6paMRBTGWfpczYjeFwc0If\n8UCfWHd+0vDHpbU6jIroQoUCmtmgjFKcBkr3ikQW3gN7Vbd0v0Z6pVli/FEGXa5k\nhIkOdriDFBaPTCutkOf/6R/UbgpHSV+FAMJOq8N9N2TitV/w7yEWhbwm0zaY/6vD\nMq1MJAa6siPiWXHunhEhC/dm57j5aRcs3t39VwMgKO5LSBj+IolxX8wjwtzkbxwG\n5XGoxcg1AgMBAAECggEAGTqde90VtWBK5085KLkXDzX86hyQeOBzmOFK6Lx+WnJQ\nJOVt5fkIek7KnNWQpZoCbOXTXc+d//Nw6NFvSrKYRX+W/rfBW14jT/Q5YljLcAw6\n3qpugDGNiPYmbpNGrikAa4vc0CyCfy4Ss6jefsa0jKTqJ1b1VHtmrFjQLRMCUzm5\nmdVtiN0ODyVVwWBY1BRXyx1ldYZIugss1fbHGb4x79+8yJWkUKdnSbsMx85ugCQq\neupWK1CVe3eWqKqXgjby8xLHkmtgGGH/duigtn68wlk2sAfOQAb462SGOK2R/AIS\nOem+s/dBbmygk+3mM3ZBg7bt9Fs+IZQc5a49dcESdQKBgQDMoAcaV+jPvtaKSGWa\n5bvKZaN1sZT6QHWGXd5yv/1fuWADUHuiDhm8UtXL07q7oLjRCTsUTxpcj+fYmcx/\nG1dMbgvwij0pLg82HFT0PrDIpaqBpzMHkAh5dn1U0vEW3ApJ3du765sytYHtC1oc\n7UdCzdD+ViSOJkzMglMRGei30wKBgQDKBuwUMEFMCO/GCegH2JEG1YvjeE30h8DU\nnUXtFulECL4ifSKSt2Ze0+VV+0UDh2uDLitP/3L6qkcE3X4wPzeKzOLW6GUVsxgR\nOCcqHEpVCEEWouXaKNk5sqv/YcnpjqetoYVhYfevXxMj8G9YENhZ6qDwX9pNHzzG\nvBLi3vVC1wKBgE+HFpufdQVg10MRViP4i57jF7+DUDJe4Q5i5zTT92a/xlgjbJmU\nP15ZF2zLknSfx5S+sK54+/bjmyksxTTVbH1w+8T2BUU++HyAUGhJAS5KbNVNJWEY\nEqMacSWJglfvFzSUPHVx4XS45JE7az943MxS75oZ4sU4j3qgYCZyWmcvAoGALpji\nItXueacmBruKNSUSbk0a8uBwupIFPAT6d/Ds5LBPiozqSITcq8qb/vTxuhqmBZ/E\nhbMZxg84Sjr8PAyYtv8C4ya/Cf5A8tfM0L2tt2cr/Bieg28gi1pWqZTYiXJJ4pZ6\nuTdrdZusQoHWbK2V+UdQz6CMLXWjAwOmJ4XddAkCgYAWcd9J+406pTwwQl45F+LL\njf3sorKLpRoZ7sl3H4uNmV3o6DZG4U8pfwVrNfi16Asolt9TJ+JDMwaNTIyfxRNh\nD+DEytZCLsQtc5PfSQdRGpChC976PAlCoI2UClgs4zQD/B82s5PSWZKV7fvPgQlH\nIIYctUyk/PTDWwhdUnwqCg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "polls-sa-sal-editor@my-notes-201806.iam.gserviceaccount.com",
+  "client_id": "106537555147736293713",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/polls-sa-sal-editor%40my-notes-201806.iam.gserviceaccount.com"
+}
