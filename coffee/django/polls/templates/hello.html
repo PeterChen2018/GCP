@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Hello</title>
+	<script language="javascript">
+      <!--
+	    var mobile_device = navigator.userAgent.match(/iPad|iPhone|android|htc|sony|padfone/i);
+		if(mobile_device  == null) message = "PC"; 
+        else message = "iPad|iPhone|android|htc|sony|padfone"; 
+        document.returnValue = confirm(message);
+      //-->
+    </script>
+    {% load staticfiles %}
+</head>
+<body>
+	<h1> 歡迎光臨 </h1>
+    <h2> 現在時刻： {{now}} </h2>
+</body>
+</html>
