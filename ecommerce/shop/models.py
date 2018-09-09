@@ -3,7 +3,6 @@ from django.db import models
 
 # Create your models here.
 
-
 class Category(models.Model):
     name = models.CharField(max_length=150, db_index=True)
     slug = models.SlugField(max_length=150, unique=True ,db_index=True)
@@ -15,7 +14,7 @@ class Category(models.Model):
         verbose_name = 'category'
         verbose_name_plural = 'categories'
 
-    def __str__(self):
+    def __unicode__(self):  # Python 3: def __str__(self):
         return self.name
 
 
@@ -35,5 +34,5 @@ class Product(models.Model):
         ordering = ('name', )
         index_together = (('id', 'slug'),)
 
-    def __str__(self):
+    def __unicode__(self):  # Python 3: def __str__(self):
         return self.name

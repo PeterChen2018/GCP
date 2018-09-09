@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 Django settings for ecommerce project.
 
@@ -101,7 +100,7 @@ if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'HOST': '/cloudsql/poppy-coffee-201809:asia-east1:sqltest1',
-            'NAME': 'eshop',
+            'NAME': 'cfshop',
             'USER': 'polls_user',
             'PASSWORD': '123456',
         }
@@ -118,7 +117,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'HOST': '127.0.0.1',
             'PORT': '3306',
-            'NAME': 'eshop',
+            'NAME': 'cfshop',
             'USER': 'polls_user',
             'PASSWORD': '123456',
         }
@@ -161,8 +160,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # LANGUAGE_CODE = 'en-us'
 # TIME_ZONE = 'UTC'
 
-LANGUAGE_CODE = 'zh-Hant'  # 改為繁體中文
-TIME_ZONE = 'Asia/Taipei'  # 改為台北時'
+LANGUAGE_CODE = 'zh-Hant'    # 改為繁體中文
+TIME_ZONE = 'Asia/Taipei'  # 改為台北時
+
 
 USE_I18N = True
 
