@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for ecommerce project.
 
@@ -105,9 +106,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+# TIME_ZONE = 'UTC'
 
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'zh-Hant'    # 改為繁體中文
+TIME_ZONE = 'Asia/Taipei'  # 改為台北時
 
 USE_I18N = True
 
@@ -119,7 +122,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'products/')

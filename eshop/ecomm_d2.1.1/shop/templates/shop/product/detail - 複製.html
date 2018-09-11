@@ -27,14 +27,6 @@
                                 <input type="submit" value="add to cart" class="btn btn-primary">
                             </form>
                             <p>{{ product.description|safe|linebreaksbr }}</p>
-{% if category %}
-<p>Yes   {{ category.name }} </p>
-{% else %}
-<p>No </p>
-{% endif %}
-<p>{{ product.name }}</p>
-<p>{{ product.category }}  </p>
-
                         </div>
                     </div>
                 </div>
