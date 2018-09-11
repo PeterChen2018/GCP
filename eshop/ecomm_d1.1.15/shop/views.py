@@ -1,4 +1,3 @@
-"""
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
 
@@ -25,10 +24,10 @@ def product_detail(request, id, slug):
         'product': product
     }
     return render(request, 'shop/product/detail.html', context)
+
+
 """
-
 from django.http import HttpResponse
-
-
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
+"""

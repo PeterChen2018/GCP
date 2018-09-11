@@ -23,6 +23,13 @@
                                     <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
                                 </h3>
                                 <p class="text-center">Kshs. {{ product.price }}</p>
+{% if product.image %}
+<p>Yes   {{ product.image }} </p>
+<p>{{ product.image.url }} </p>
+<img src="/products/products/2018/09/11/coffee_bean.jpg">
+{% else %}
+<p>No </p>
+{% endif %}								
                             </div>
                         </div>
                       </div>
