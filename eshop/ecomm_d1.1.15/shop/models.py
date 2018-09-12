@@ -21,7 +21,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
+    # category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=100, db_index=True)
     description = models.TextField(blank=True)
@@ -31,7 +31,9 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
-
+	# ctest = models.ForeignKey('Category', blank=True, null=True)
+    ctest = models.ForeignKey('Category', blank=True, null=True)
+	
     class Meta:
         ordering = ('name', )
         index_together = (('id', 'slug'),)
