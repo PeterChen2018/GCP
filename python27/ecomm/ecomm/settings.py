@@ -175,5 +175,5 @@ STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'products/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

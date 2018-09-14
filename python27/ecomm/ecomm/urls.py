@@ -21,10 +21,20 @@ from django.conf.urls.static import static
 from shop.views import product_list
 
 urlpatterns = [
+	url(r'^$', product_list ),
+	url(r'^shop/', include('shop.urls')),
+    url(r'^admin/', include(admin.site.urls)),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+"""
+urlpatterns = [
     # url(r'^$', index),
 	# url('', include('shop.urls')),
 	url(r'^$', product_list ),
 	url(r'^shop/', include('shop.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+"""
