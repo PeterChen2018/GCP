@@ -51,12 +51,12 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.out.write('<html><body>')
         guestbook_name = self.request.get('guestbook_name')
-
+        
         greetings = Greeting.query(
             ancestor=guestbook_key(guestbook_name)) \
             .order(-Greeting.date) \
             .fetch(10)
-
+        
         for greeting in greetings:
             if greeting.author:
                 self.response.out.write(
@@ -69,7 +69,7 @@ class MainPage(webapp2.RequestHandler):
             self.response.out.write('<blockquote>%s</blockquote></div>' %
                                     cgi.escape(greeting.content))
             # [END display_image]
-
+        
         # [START form]
         self.response.out.write("""
               <form action="/sign?%s"
@@ -118,9 +118,12 @@ class Guestbook(webapp2.RequestHandler):
         # [START sign_handler_1]
         avatar = self.request.get('img')
         # [END sign_handler_1]
+        
         # [START transform]
-        avatar = images.resize(avatar, 32, 32)
+        # avatar = images.resize(avatar, 32, 32)
+        avatar = images.resize(avatar, 200, 200)
         # [END transform]
+        
         # [START sign_handler_2]
         greeting.avatar = avatar
         greeting.put()

@@ -2,6 +2,8 @@
 from django.db import models
 from django.urls import reverse
 
+from PIL import Image
+
 
 class Category(models.Model):
     name = models.CharField(max_length=150, db_index=True)
@@ -32,9 +34,9 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    image = models.ImageField(upload_to='uploads/%Y/%m/%d', blank=True)
     # image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
-    # image = models.ImageField(upload_to='uploads/%Y/%m/%d/', blank=True)
-    image = models.ImageField( blank=True )
+    # image = models.ImageField( blank=True )
     
     class Meta:
         ordering = ('name', )
