@@ -22,14 +22,6 @@
                             <h6><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></h6>
                             <p class="text-muted">$ {{ product.price }}</p>
                             <p>{{ product.description|safe|linebreaksbr }}</p>
-							
-{% if category %}
-<p>Yes   {{ category.name }} </p>
-{% else %}
-<p>No </p>
-{% endif %}
-<p>{{ product.name }}</p>
-<p>{{ product.category }}  </p>
 
                         </div>
                     </div>

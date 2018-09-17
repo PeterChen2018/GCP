@@ -25,6 +25,21 @@ def product_detail(request, id, slug):
     }
     return render(request, 'shop/product/detail.html', context)
 
+    
+"""
+        for greeting in greetings:
+            if greeting.author:
+                self.response.out.write(
+                    '<b>%s</b> wrote:' % greeting.author)
+            else:
+                self.response.out.write('An anonymous person wrote:')
+            # [START display_image]
+            self.response.out.write('<div><img src="/img?img_id=%s"></img>' %
+                                    greeting.key.urlsafe())
+            self.response.out.write('<blockquote>%s</blockquote></div>' %
+                                    cgi.escape(greeting.content))
+            # [END display_image]
+"""
 
 """
 from django.http import HttpResponse
